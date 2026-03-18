@@ -92,19 +92,19 @@ const handlEdit = (i) => {
     formEdit.addEventListener("submit", (e) => {
         e.preventDefault();
         let newName = document.querySelector("#contact-name");
-        let newstd = document.querySelector("#contact-phone").value;
-        let newEmail = document.querySelector("#contact-email").value;
+        let newstd = document.querySelector("#contact-phone");
+        let newEmail = document.querySelector("#contact-email");
         if (newName == "") {
         } else {
             listContact[i].name = newName.value ;
         }
         if (newstd == "") {
         } else {
-            listContact[i].std = newstd.valune ;
+            listContact[i].std = newstd.value ;
         }
         if (newEmail == "") {
         } else {
-            listContact[i].email = newEmail.valune ;
+            listContact[i].email = newEmail.value ;
         }
         render();
         
